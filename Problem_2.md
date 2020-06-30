@@ -1,5 +1,5 @@
 ## Problem 2
-### Creating directory
+### Play with directory 
 
 Q2(a). Create a directory without name from command line <br><br>
 A. We can't have a directory/file with an empty name. However, the name can be something we can't see like whitespace or control characters. We can do this by mkdir " " . It will look like that the folder has no name. <br><br>
