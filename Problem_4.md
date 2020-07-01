@@ -14,6 +14,7 @@ Question->
 Answer->
 
   Setup
+  - /tmp directory is shared among all users
   - Login as Root (Since we need root account to create users)
   - `useradd jack` (Add user jack)
   - `passwd jack` (Set password for user jack)
