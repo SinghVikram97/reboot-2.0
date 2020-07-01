@@ -31,7 +31,17 @@ Answer->
   - Press `i` to get into insert mode type hello jill then press `:wq` to save and exit
   - `mkdir {jill1,jill2}` (To make 2 directories named jill1 and jill2)
   
-  Sharing
-   - Login as jill
+  Swap
+   - Login as jack
    - Open terminal and run following command
-   - `cp /home/jack/jack.txt /tmp`
+   - `cp -r /home/jack/{jack1,jack2,jack.txt} /tmp`
+   - Now log out and login as jill
+   - Open terminal and rum following command
+   - `cp -r /tmp/{jack1,jack2,jack.txt} /home/jill`
+   - This will copy files of jack to jill user
+   - Now run the following command
+   - `cp -r /home/jill/{jill1,jill2,jill.txt} /tmp`
+   - Now log out and login as jack
+   - Open terminal and run following command
+   - `cp -r /tmp/{jill1,jill2,jill.txt} /home/jack`
+   - This will copy files of jill to jack user
