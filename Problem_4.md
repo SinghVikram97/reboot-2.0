@@ -23,25 +23,25 @@ Answer->
   - Now login as jack
   - Open terminal and do following steps
   - `vim jack.txt` (Opening file in vim)
-  - Press `i` to get into insert mode type hello jack then press `:wq` to save and exit
+  - Press `i` to get into insert mode type `hello jack` then press `:wq` to save and exit
   - `mkdir {jack1,jack2}` (To make 2 directories named jack1 and jack2)
   - Now logout and login as jill
   - Open terminal and do following steps
   - `vim jill.txt` (Opening file in vim)
-  - Press `i` to get into insert mode type hello jill then press `:wq` to save and exit
+  - Press `i` to get into insert mode type `hello jill` then press `:wq` to save and exit
   - `mkdir {jill1,jill2}` (To make 2 directories named jill1 and jill2)
   
   Swap
    - Login as jack
    - Open terminal and run following command
-   - `cp -r /home/jack/{jack1,jack2,jack.txt} /tmp`
+   - `cp -r /home/jack/{jack1,jack2,jack.txt} /tmp` (Copying jack's data to tmp folder)
    - Now log out and login as jill
-   - Open terminal and rum following command
-   - `cp -r /tmp/{jack1,jack2,jack.txt} /home/jill`
+   - Open terminal and run following command
+   - `cp -r /tmp/{jack1,jack2,jack.txt} /home/jill`  (Copying from tmp folder to jill home directory)
    - This will copy files of jack to jill user
    - Now run the following command
-   - `cp -r /home/jill/{jill1,jill2,jill.txt} /tmp`
+   - `cp -r /home/jill/{jill1,jill2,jill.txt} /tmp` (Copying jill's data to tmp folder)
    - Now log out and login as jack
    - Open terminal and run following command
-   - `cp -r /tmp/{jill1,jill2,jill.txt} /home/jack`
+   - `cp -r /tmp/{jill1,jill2,jill.txt} /home/jack` (Copying from tmp folder to jack home directory)
    - This will copy files of jill to jack user
